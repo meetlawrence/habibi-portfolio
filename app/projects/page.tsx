@@ -5,7 +5,7 @@ import { useState } from "react";
 interface CarouselProps {
   count?: number;
   startIndex?: number;
-  onSelectVideo?: (indexString: string) => void;
+  onSelectVideo: (indexString: string) => void;
 }
 
 // Reusable localized placeholder carousel matching your preferred minimalist framework
@@ -20,7 +20,7 @@ function VideoPlaceholderCarousel({ count = 3, startIndex = 1, onSelectVideo }: 
         return (
           <div 
             key={index} 
-            onClick={() => onSelectVideo && onSelectVideo(formattedIndex.toString())}
+            onClick={() => onSelectVideo(formattedIndex.toString())}
             className="aspect-video w-[85%] sm:w-[48%] md:w-full bg-zinc-900/50 border border-zinc-800/80 rounded-xl flex flex-col items-center justify-center relative group overflow-hidden snap-center shrink-0 cursor-pointer transition-transform duration-500 ease-out md:hover:scale-[1.02]"
           >
             {/* Subtle grid background pattern simulation */}
@@ -54,7 +54,7 @@ export default function ProjectsOverview() {
       <section>
         <h1 className="text-5xl font-black text-zinc-50 tracking-tighter mb-6 uppercase">
           The Production <br />
-          <span className="text-amber-500 font-mono text-4xl font-normal lowercase tracking-normal">// reel.</span>
+          <span className="text-amber-500 font-mono text-4xl font-normal lowercase tracking-normal"> reel</span>
         </h1>
         <p className="text-zinc-400 max-w-2xl font-light leading-relaxed">
           A curated catalog of architectural visual campaigns, editorial music films, and cultural documentaries. Each file explores the harmony of precise blocking, deliberate rhythm structures, and intentional color grading frameworks.
@@ -76,7 +76,11 @@ export default function ProjectsOverview() {
            <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">02. Commercials</h2>
            <div className="h-px grow bg-zinc-900/60" />
         </div>
-        <VideoPlaceholderCarousel count={2} startIndex={3} onSelectVideo={setActiveVideo} />
+        <VideoPlaceholderCarousel 
+  count={2} 
+  startIndex={3} 
+  onSelectVideo={(index) => console.log("Video selected:", index)} 
+/>
       </section>
 
       {/* 03. Funny Reels */}
