@@ -5,7 +5,7 @@ import { useState } from "react";
 interface CarouselProps {
   count?: number;
   startIndex?: number;
-  onSelectVideo: (indexString: string) => void;
+  onSelectVideo?: (indexString: string) => void;
 }
 
 // Reusable localized placeholder carousel matching your preferred minimalist framework
@@ -20,7 +20,7 @@ function VideoPlaceholderCarousel({ count = 3, startIndex = 1, onSelectVideo }: 
         return (
           <div 
             key={index} 
-            onClick={() => onSelectVideo(formattedIndex.toString())}
+            onClick={() => onSelectVideo && onSelectVideo(formattedIndex.toString())}
             className="aspect-video w-[85%] sm:w-[48%] md:w-full bg-zinc-900/50 border border-zinc-800/80 rounded-xl flex flex-col items-center justify-center relative group overflow-hidden snap-center shrink-0 cursor-pointer transition-transform duration-500 ease-out md:hover:scale-[1.02]"
           >
             {/* Subtle grid background pattern simulation */}
@@ -76,7 +76,7 @@ export default function ProjectsOverview() {
            <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">02. Commercials</h2>
            <div className="h-px grow bg-zinc-900/60" />
         </div>
-        <VideoPlaceholderCarousel count={2} startIndex={3} />
+        <VideoPlaceholderCarousel count={2} startIndex={3} onSelectVideo={setActiveVideo} />
       </section>
 
       {/* 03. Funny Reels */}
