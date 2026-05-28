@@ -83,10 +83,19 @@ export default function ProjectsOverview() {
 />
       </section>
 
-      {/* 03. Funny Reels */}
+      {/* 03. Event Reels */}
       <section>
         <div className="flex items-center gap-4 mb-8">
-           <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">03. Funny Reels</h2>
+           <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">03. Event Reels</h2>
+           <div className="h-px grow bg-zinc-900/60" />
+        </div>
+        <VideoPlaceholderCarousel count={3} startIndex={8} onSelectVideo={setActiveVideo} />
+      </section>
+
+      {/* 04. Funny Reels */}
+      <section>
+        <div className="flex items-center gap-4 mb-8">
+           <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">04. Funny Reels</h2>
            <div className="h-px grow bg-zinc-900/60" />
         </div>
         <VideoPlaceholderCarousel count={3} startIndex={5} onSelectVideo={setActiveVideo} />
