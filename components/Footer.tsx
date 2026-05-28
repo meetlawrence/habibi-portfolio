@@ -1,8 +1,25 @@
 // src/components/Footer.tsx
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Footer() {  
   return (
     <footer className="bg-black text-zinc-500 py-12 border-t border-zinc-900">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <Link href="/" className="group flex flex-col items-center gap-1 leading-none">
+          {/* Logo Container Wrapper */}
+          <div className="relative w-8 h-12 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
+            <Image 
+              src="/habibi-logo.svg" 
+              alt="Habibi Creates Logo"
+              width={32}
+              height={32}
+              priority
+              className="object-contain"
+            />
+          </div>
+        </Link>
         
         {/* Branding & Copyright */}
         <div className="text-center md:text-left space-y-1">
@@ -19,6 +36,7 @@ export default function Footer() {
 
         {/* Media Portfolios & Direct Contact Links */}
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-mono tracking-wider">
+
           <a 
             href="https://youtube.com" 
             target="_blank" 

@@ -13,12 +13,12 @@ export default function Header() {
         <Link href="/" className="group flex items-center gap-3 leading-none">
           
           {/* Logo Container Wrapper */}
-          <div className="relative w-8 h-8 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
+          <div className="relative w-8 h-12 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
             {/* Replace "/habibi-logo.png" with the actual path to his brand logo asset 
               once you drop it into your public/ directory.
             */}
             <Image 
-              src="/habibi-logo.png" 
+              src="/habibi-logo.svg" 
               alt="Habibi Creates Logo"
               width={32}
               height={32}
