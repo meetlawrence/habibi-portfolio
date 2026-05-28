@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  /* Fixed foreground color so your baseline body text is cleanly visible */
+  --foreground: #e4e4e7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* 1. Tell Tailwind v4 to pick up the layout's cursive font variable hook */
+  --font-cursive: var(--font-cursive);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes mobileGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 15px 2px rgba(251, 191, 36, 0.1);
+    /* Swapped to Amber to match brand identity */
+    border-color: rgba(251, 191, 36, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 25px 5px rgba(249, 115, 22, 0.2);
+    /* Swapped to Orange to match brand identity */
+    border-color: rgba(249, 115, 22, 0.4);
+  }
+}
+
+.mobile-card-glow {
+  animation: mobileGlow 4s ease-in-out infinite;
+}
