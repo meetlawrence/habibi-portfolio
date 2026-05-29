@@ -56,17 +56,17 @@ function VideoPlaceholderCarousel({ videos, onSelectVideo }: CarouselProps) {
 
 export default function ProjectsOverview() {
   const documentaries = [
-    { title: "Documentary Project One", id: "dQw4w9WgXcQ" },
+    { title: "Graduation Vlog", id: "p5AtwgXWUT4" },
     { title: "Documentary Project Two", id: "dQw4w9WgXcQ" }
   ];
 
   const commercials = [
-    { title: "Commercial Campaign Alpha", id: "dQw4w9WgXcQ" },
+    { title: "PornHub Commercial", id: "LQ-txc6mS7M" },
     { title: "Commercial Campaign Beta", id: "dQw4w9WgXcQ" }
   ];
 
   const eventReels = [
-    { title: "Cultural Festival Aftermovie", id: "dQw4w9WgXcQ" },
+    { title: "Oluwakemi Birthday Reel", id: "e05LxO38R5c" },
     { title: "Sartorial Gala Reel", id: "dQw4w9WgXcQ" },
     { title: "Live Concert Edit", id: "dQw4w9WgXcQ" }
   ];
