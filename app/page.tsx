@@ -43,14 +43,14 @@ export default function Home() {
       </div>
 
       {/* ================= HERO / BANNER SECTION ================= */}
-      {/* Changed min-h-screen to min-h-[auto] on mobile and reduced padding to bring items up */}
-      <section className="relative min-h-[auto] lg:min-h-screen flex items-center pt-24 pb-6 px-6 sm:px-12 md:px-20 lg:px-32 group/hero">
+      {/* Reduced pt-24 to pt-4 on mobile to collapse the top layout gap entirely */}
+      <section className="relative min-h-[auto] lg:min-h-screen flex items-center pt-4 pb-6 px-6 sm:px-12 md:px-20 lg:px-32 group/hero">
         
         {/* Subtle top theater lighting projection */}
         <div className="absolute top-[-20%] right-[-10%] w-175 h-175 bg-amber-950/15 blur-[150px] rounded-full pointer-events-none z-0" />
         
-        {/* Tightened the grid layout gap from 12 to 4 on mobile devices */}
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center relative z-10">
+        {/* Added -mt-12 on mobile to shift the complete grid container layout up the screen */}
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center relative z-10 -mt-12 lg:mt-0">
           
           {/* Left / Upper Main Presentation Block */}
           <div className="lg:col-span-7 flex flex-col justify-center text-left order-2 lg:order-1 relative">
@@ -100,8 +100,8 @@ export default function Home() {
             {/* Absolute Abstract Neon Geometry floating behind image container */}
             <div className="absolute -left-4 top-1/4 w-px h-1/3 bg-gradient-to-b from-transparent via-amber-500/20 to-transparent transition-all duration-1000 group-hover/hero:h-1/2" />
             
-            {/* Added -mt-4 on mobile to lift the portrait frame slightly closer to the top navigation layout */}
-            <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[440px] aspect-[4/5] overflow-hidden -mt-4 lg:mt-0 transition-all duration-1000 ease-out [mask-image:linear-gradient(to_bottom,black_50%,rgba(0,0,0,0.7)_75%,transparent_96%)]">
+            {/* Lifted portrait spacing wrapper via -mt-6 on mobile layouts */}
+            <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[440px] aspect-[4/5] overflow-hidden -mt-6 lg:mt-0 transition-all duration-1000 ease-out [mask-image:linear-gradient(to_bottom,black_50%,rgba(0,0,0,0.7)_75%,transparent_96%)]">
               
               <Image 
                 src="/habibi-profile.png" 
