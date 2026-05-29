@@ -54,7 +54,7 @@ export default function Footer() {
           {/* Logo Container Wrapper */}
           <div className="relative w-8 h-12 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
             <Image 
-              src="/habibi-logo.png" 
+              src="/habibi-logo.webp" 
               alt="Habibi Creates Logo"
               width={32}
               height={32}
