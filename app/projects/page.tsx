@@ -57,24 +57,25 @@ function VideoPlaceholderCarousel({ videos, onSelectVideo }: CarouselProps) {
 export default function ProjectsOverview() {
   const documentaries = [
     { title: "Graduation Vlog", id: "p5AtwgXWUT4" },
-    { title: "Documentary Project Two", id: "dQw4w9WgXcQ" }
+    { title: "Inachalo River", id: "sF10BQOriC4" }
   ];
 
   const commercials = [
-    { title: "PornHub Commercial", id: "LQ-txc6mS7M" },
-    { title: "Commercial Campaign Beta", id: "dQw4w9WgXcQ" }
+    { title: "Drippy Lube Commercial", id: "LQ-txc6mS7M" },
+    { title: "Commercial Campaign", id: "XUHF92wuvQc" }
   ];
 
   const eventReels = [
     { title: "Oluwakemi Birthday Reel", id: "e05LxO38R5c" },
-    { title: "Sartorial Gala Reel", id: "dQw4w9WgXcQ" },
+    { title: "Baby Ola", id: "3Cf2qcGLl0w" },
     { title: "Live Concert Edit", id: "dQw4w9WgXcQ" }
   ];
 
-  const funnyReels = [
-    { title: "Street Concept Vignette", id: "dQw4w9WgXcQ" },
-    { title: "Behind The Scenes Cut", id: "dQw4w9WgXcQ" },
-    { title: "Alternative Outtake Real", id: "dQw4w9WgXcQ" }
+  const youtubeReels = [
+    { title: "Youtube Reel One", id: "tCicJuUgfPo" },
+    { title: "Youtube Reel Two", id: "q0Yz4j8Yj50" },
+    { title: "Youtube Reel Three", id: "7F4_aOjmWkk" },
+    { title: "Youtube Reel Four", id: "WlF8IHoHGEk" }
   ];
 
   const [activeVideo, setActiveVideo] = useState<VideoData | null>(null);
@@ -119,13 +120,13 @@ export default function ProjectsOverview() {
         <VideoPlaceholderCarousel videos={eventReels} onSelectVideo={setActiveVideo} />
       </section>
 
-      {/* 04. Funny Reels */}
+      {/* 04. Youtube Reels */}
       <section>
         <div className="flex items-center gap-4 mb-8">
-           <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">04. Funny Reels</h2>
+           <h2 className="text-xs font-mono font-bold text-zinc-400 tracking-[0.25em] uppercase">04. Youtube Reels</h2>
            <div className="h-px grow bg-zinc-900/60" />
         </div>
-        <VideoPlaceholderCarousel videos={funnyReels} onSelectVideo={setActiveVideo} />
+        <VideoPlaceholderCarousel videos={youtubeReels} onSelectVideo={setActiveVideo} />
       </section>
 
       {/* ================= THEATER VIDEO MODAL (HOMEPAGE DESIGN) ================= */}

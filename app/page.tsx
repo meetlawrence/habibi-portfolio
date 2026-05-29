@@ -22,16 +22,16 @@ interface CarouselProps {
 // Structured video asset data collection containing targeted YouTube tracking tokens
 const featuredVideos: VideoData[] = [
   {
-    title: "Commercial Visual Portfolio 2026",
-    id: "dQw4w9WgXcQ" // Extract the characters after "v=" in your watch URL
+    title: "Habibi Creates Showreel 2025",
+    id: "WkgIGFx5gIo"
   },
   {
-    title: "Cinematic Short-Form Narrative",
+    title: "Cinematic Short Film",
     id: "XUHF92wuvQc"
   },
   {
     title: "High-Energy Brand Visuals",
-    id: "dQw4w9WgXcQ"
+    id: "3Cf2qcGLl0w"
   }
 ];
 
