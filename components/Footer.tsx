@@ -5,7 +5,7 @@ import Image from 'next/image';
 const socialLinks = [
   { 
     name: 'YouTube', 
-    href: 'https://youtube.com',
+    href: 'https://youtube.com/@habibi70599?si=hVRRPbL5eUdpLK5j',
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
         <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
@@ -15,7 +15,7 @@ const socialLinks = [
   },
   { 
     name: 'Instagram', 
-    href: 'https://instagram.com',
+    href: 'https://www.instagram.com/habibi70599?igsh=MWs0YmN1ZHhtamdnMg%3D%3D&utm_source=qr',
     svg: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
         <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />

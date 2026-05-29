@@ -1,7 +1,7 @@
 "use client"; // Required for handling modal state and click triggers
 
 import { useState } from "react";
-import Image from "next/image"; // Added this to resolve the Uncaught TypeError conflict
+import Image from "next/image"; 
 
 interface VideoData {
   title: string;

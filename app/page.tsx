@@ -27,7 +27,7 @@ const featuredVideos: VideoData[] = [
   },
   {
     title: "Cinematic Short-Form Narrative",
-    id: "dQw4w9WgXcQ"
+    id: "XUHF92wuvQc"
   },
   {
     title: "High-Energy Brand Visuals",
