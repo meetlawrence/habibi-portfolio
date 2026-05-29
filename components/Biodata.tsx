@@ -1,7 +1,7 @@
 // components/Biodata.tsx
 export default function Biodata() {
   const skills = [
-    { name: "Premiere / After Effects", level: "95%" },
+    { name: "Premiere / After Effects", level: "85%" },
     { name: "CapCut", level: "90%" },
     { name: "Cinematography & Framing", level: "85%" },
     { name: "Motion Graphics & Sound", level: "80%" },

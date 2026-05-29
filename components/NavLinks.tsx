@@ -7,7 +7,7 @@ const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: 'mailto:okonwhyte@gmail.com' },
+  { name: 'Contact', href: 'mailto:gabrielokonkwo101@gmail.com' },
 ];
 
 export default function NavLinks() {
