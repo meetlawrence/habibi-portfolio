@@ -27,7 +27,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 z-10 pointer-events-none" />
               <div className="relative w-full h-full overflow-hidden rounded-xl bg-zinc-950 border border-zinc-900">
                 <Image 
-                  src="/habibi-profile.jpg" 
+                  src="/habibi.png" 
                   alt="Gabriel Habibi - Portfolio Profile"
                   fill
                   priority
