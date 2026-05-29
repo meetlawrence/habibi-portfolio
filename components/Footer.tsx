@@ -48,36 +48,38 @@ const socialLinks = [
 export default function Footer() {   
   return (
     <footer className="bg-black text-zinc-500 py-12 border-t border-zinc-900">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        
-        <Link href="/" className="group flex flex-col items-center gap-1 leading-none">
-          {/* Logo Container Wrapper */}
-          <div className="relative w-8 h-12 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
-            <Image 
-              src="/habibi-logo.webp" 
-              alt="Habibi Creates Logo"
-              width={32}
-              height={32}
-              priority
-              className="object-contain"
-              style={{ height: 'auto' }}
-            />
-          </div>
-        </Link>
-        
-        {/* Branding & Copyright */}
-        <div className="text-center md:text-left space-y-1">
-          <p className="text-zinc-50 font-extrabold tracking-tight">
-            Habibi<span className="text-amber-500">Creates</span>
-          </p>
-          <p className="text-xs font-mono">
-            &copy; {new Date().getFullYear()} All rights reserved.
-          </p>
-          <p className="text-[12px] text-zinc-600 font-mono block md:inline">
-            Based in Port Harcourt &bull; Available Worldwide
-          </p>
-        </div>
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
 
+        {/* Brand Grouping Wrapper Container */}
+        <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+          <Link href="/" className="group flex flex-col items-center gap-1 leading-none">
+            {/* Logo Layout Box Sync */}
+            <div className="relative w-10 h-10 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
+              <Image 
+                src="/habibi-logo.webp" 
+                alt="Habibi Creates Logo"
+                fill
+                priority
+                sizes="40px"
+                className="object-contain"
+              />
+            </div>
+          </Link>
+          
+          {/* Branding & Copyright */}
+          <div className="space-y-1">
+            <p className="text-zinc-50 font-extrabold tracking-tight text-sm">
+              Habibi<span className="text-amber-500">Creates</span>
+            </p>
+            <p className="text-xs font-mono text-zinc-500">
+              &copy; {new Date().getFullYear()} All rights reserved.
+            </p>
+            <p className="text-[11px] text-zinc-600 font-mono block">
+              Based in Port Harcourt &bull; Available Worldwide
+            </p>
+          </div>
+        </div>
+      
         {/* Media Portfolios & Direct Contact Icons */}
         <div className="flex items-center justify-center gap-6 text-zinc-500">
           {socialLinks.map((link) => (
@@ -87,7 +89,7 @@ export default function Footer() {
               target={link.href.startsWith('http') ? '_blank' : undefined}
               rel="noopener noreferrer" 
               aria-label={link.name}
-              className="hover:text-amber-400 transition-colors duration-300 flex items-center justify-center min-h-[44px] sm:min-h-0"
+              className="hover:text-amber-400 transition-colors duration-300 flex items-center justify-center min-w-[44px] min-h-[44px] md:min-w-0 md:min-h-0"
             >
               {link.svg}
             </a>
