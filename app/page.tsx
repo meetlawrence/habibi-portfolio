@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* ================= HERO / BANNER SECTION ================= */}
       {/* Reduced pt-24 to pt-4 on mobile to collapse the top layout gap entirely */}
-      <section className="relative min-h-[auto] lg:min-h-screen flex items-center pt-4 pb-6 px-6 sm:px-12 md:px-20 lg:px-32 group/hero">
+      <section className="relative min-h-auto lg:min-h-screen flex items-center pt-24 lg:pt-1 pb-6 px-6 sm:px-12 md:px-20 lg:px-32 group/hero">
         
         {/* Subtle top theater lighting projection */}
         <div className="absolute top-[-20%] right-[-10%] w-175 h-175 bg-amber-950/15 blur-[150px] rounded-full pointer-events-none z-0" />
@@ -101,21 +101,21 @@ export default function Home() {
             <div className="absolute -left-4 top-1/4 w-px h-1/3 bg-gradient-to-b from-transparent via-amber-500/20 to-transparent transition-all duration-1000 group-hover/hero:h-1/2" />
             
             {/* Lifted portrait spacing wrapper via -mt-6 on mobile layouts */}
-            <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[440px] aspect-[4/5] overflow-hidden -mt-6 lg:mt-0 transition-all duration-1000 ease-out [mask-image:linear-gradient(to_bottom,black_50%,rgba(0,0,0,0.7)_75%,transparent_96%)]">
+            {/* <div className="relative w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[440px] aspect-[4/5] overflow-hidden -mt-6 lg:mt-0 transition-all duration-1000 ease-out [mask-image:linear-gradient(to_bottom,black_50%,rgba(0,0,0,0.7)_75%,transparent_96%)]"> */}
               
-              <Image 
+              {/* <Image 
                 src="/habibi-profile.png" 
                 alt="Habibi Creates - Videographer Profile Portrait"
                 fill
                 priority
                 className="object-cover object-bottom transition-all duration-1000 ease-out grayscale group-hover/hero:grayscale-0 brightness-[0.8] group-hover/hero:brightness-100 scale-100 group-hover/hero:scale-[1.03]"
                 sizes="(max-w-768px) 100vw, 40vw"
-              />
+              /> */}
 
               {/* Classic Cinematic Gradients & Noise Layering */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-              <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(#fff_1px,transparent_1px)] bg-[size:20px_20px] mix-blend-overlay" />
-            </div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(#fff_1px,transparent_1px)] bg-[size:20px_20px] mix-blend-overlay" /> */}
+            {/* </div> */}
 
           </div>
 
