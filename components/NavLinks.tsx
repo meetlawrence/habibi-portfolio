@@ -14,7 +14,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-row items-center gap-2 md:gap-7">
+    <div className="flex flex-row items-center gap-5 md:gap-7">
       {navItems.map((link) => {
         const isActive = pathname === link.href;
 

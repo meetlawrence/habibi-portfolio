@@ -19,7 +19,7 @@ export default function About() {
               HELLO, I AM
             </span>
             <h1 className="text-3xl md:text-4xl font-black text-zinc-50 tracking-wide uppercase mb-8">
-              Gabriel Habibi
+              Gabriel Okonkwo 
             </h1>
             
             {/* Aspect-ratio matched picture frame displaying the profile element with a custom inner vignette glow effect */}

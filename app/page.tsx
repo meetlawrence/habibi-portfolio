@@ -38,7 +38,7 @@ export default function Home() {
     <main className="min-h-screen bg-black text-zinc-300 relative overflow-hidden select-none">
       
       {/* Huge subtle structural background watermarks */}
-      <div className="absolute top-[10%] left-[-5%] font-black text-[24vw] leading-none text-zinc-900/15 tracking-tighter uppercase select-none pointer-events-none z-0">
+      <div className="absolute top-[10%] left-[-5%] font-black text-[24vw] leading-none text-zinc-900/25 tracking-tighter uppercase select-none pointer-events-none z-0">
         HC // 26
       </div>
 
@@ -55,7 +55,7 @@ export default function Home() {
             
             {/* Minimalist Identity Stamp */}
             <div className="font-mono text-[10px] tracking-[0.5em] text-amber-500 uppercase mb-6 flex items-center gap-2">
-              <span>[ CREATIVE DIRECTION ]</span>
+              <span>[ CREATIVE DIRECTOR ]</span>
             </div>
 
             {/* Asymmetric Typography Grid */}
@@ -74,16 +74,21 @@ export default function Home() {
 
             {/* Raw Border Action Trigger Trays */}
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Link href="/projects" className="w-full sm:w-auto">
+              <Link href="/about" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto px-10 py-4 bg-zinc-50 text-black font-mono text-[11px] font-bold uppercase tracking-widest rounded-none hover:bg-amber-400 transition-all duration-400 cursor-pointer text-center">
-                  LAUNCH WORK //
+                  READ MORE
                 </button>
               </Link>
-              <a href="mailto:okonwhyte@gmail.com" className="w-full sm:w-auto">
+              <a href="mailto:gabrielokonkwo101@gmail.com" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto px-10 py-4 bg-transparent text-zinc-400 font-mono text-[11px] font-bold uppercase tracking-widest rounded-none border border-zinc-800 hover:border-zinc-200 hover:text-zinc-50 transition-all duration-400 cursor-pointer text-center">
-                  SAY HELLO
+                  EMAIL
                 </button>
-              </a>  
+              </a>
+              <a href="https://wa.me/+2349152116103" className="w-full sm:w-auto" target="_blank" rel="noopener noreferrer">
+                <button className="w-full sm:w-auto px-10 py-4 bg-transparent text-zinc-400 font-mono text-[11px] font-bold uppercase tracking-widest rounded-none border border-zinc-800 hover:border-amber-400 hover:text-amber-400 transition-all duration-400 cursor-pointer text-center">
+                  WHATSAPP
+                </button>
+              </a>
             </div>
 
           </div>

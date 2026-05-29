@@ -2,7 +2,7 @@
 export default function Biodata() {
   const skills = [
     { name: "Premiere / After Effects", level: "95%" },
-    { name: "DaVinci Resolve (Log/LUTs)", level: "90%" },
+    { name: "CapCut", level: "90%" },
     { name: "Cinematography & Framing", level: "85%" },
     { name: "Motion Graphics & Sound", level: "80%" },
     { name: "Social Content Strategy", level: "90%" }
@@ -47,8 +47,8 @@ export default function Biodata() {
           </h3>
           <div className="font-mono text-xs space-y-1">
             <span className="text-zinc-600 block">● 2019 — 2023</span>
-            <span className="text-zinc-300 block uppercase tracking-wide">University of Port Harcourt</span>
-            <span className="text-zinc-500 block">Communication Studies</span>
+            <span className="text-zinc-300 block uppercase tracking-wide">Federal University Otuoke Bayelsa State</span>
+            <span className="text-zinc-500 block">English Language & Communication Studies</span>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ export default function Biodata() {
           </h3>
           <div className="font-mono text-xs space-y-1">
             <span className="text-zinc-300 block uppercase tracking-wide">Digital Content Creator</span>
-            <span className="text-zinc-500 block">Direction, Editing, & Grading</span>
+            <span className="text-zinc-500 block">Direction, Editing, Grading & Storytelling</span>
             <span className="text-amber-500/80 block mt-1">Available for Bookings</span>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Biodata() {
           className="inline-flex items-center group text-zinc-100 font-bold tracking-tight text-sm md:text-base min-h-[44px]"
         >
           <span className="border-b border-amber-500/30 group-hover:border-amber-400 pb-0.5 font-mono uppercase tracking-wider transition-all duration-300">
-            Let's shoot something together
+            Let's create something together
           </span>
           <span className="ml-3 p-1.5 rounded-full border border-zinc-900 group-hover:border-amber-500 group-hover:bg-amber-500/10 transition-all duration-300 flex items-center justify-center">
             <svg 
