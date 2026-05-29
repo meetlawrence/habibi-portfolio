@@ -11,7 +11,7 @@ export default function MobileMenu() {
       {/* 2-Line Hamburger Button (Tap Target Optimized) */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="relative z-50 flex flex-col items-end justify-center gap-1.5 p-2 min-h-[44px] min-w-[44px]"
+        className="relative z-50 flex flex-col items-end justify-center gap-1.5 p-2 min-h-11 min-w-11"
         aria-label="Toggle Menu"
       >
         <span className={`h-0.5 bg-zinc-50 transition-all duration-300 rounded-full ${

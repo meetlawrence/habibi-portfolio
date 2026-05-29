@@ -23,9 +23,7 @@ export default function Header() {
               className="object-contain"
               style={{ height: 'auto' }}
             />
-          </div>
-
-          
+          </div>          
         </Link>
 
         {/* Desktop Nav (Hidden on Mobile) */}

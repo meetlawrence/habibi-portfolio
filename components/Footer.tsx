@@ -89,7 +89,7 @@ export default function Footer() {
               target={link.href.startsWith('http') ? '_blank' : undefined}
               rel="noopener noreferrer" 
               aria-label={link.name}
-              className="hover:text-amber-400 transition-colors duration-300 flex items-center justify-center min-w-[44px] min-h-[44px] md:min-w-0 md:min-h-0"
+              className="hover:text-amber-400 transition-colors duration-300 flex items-center justify-center min-w-11 min-h-11 md:min-w-0 md:min-h-0"
             >
               {link.svg}
             </a>

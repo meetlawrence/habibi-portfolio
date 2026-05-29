@@ -33,7 +33,7 @@ export default function NavLinks() {
 
             {/* Amber Glow Underline Asset */}
             <span 
-              className={`absolute -bottom-2 h-[2px] transition-all duration-500 rounded-full ${
+              className={`absolute -bottom-2 h-0.5 transition-all duration-500 rounded-full ${
                 isActive 
                   ? 'w-full bg-amber-400 shadow-[0_0_12px_rgba(251,191,36,0.8)]' 
                   : 'w-0 bg-zinc-800 group-hover:w-full group-hover:bg-amber-500/50'

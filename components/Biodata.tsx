@@ -70,10 +70,10 @@ export default function Biodata() {
       <div className="pt-4 border-t border-zinc-900/40 max-w-xl">
         <a 
           href="mailto:okonwhyte@gmail.com"
-          className="inline-flex items-center group text-zinc-100 font-bold tracking-tight text-sm md:text-base min-h-[44px]"
+          className="inline-flex items-center group text-zinc-100 font-bold tracking-tight text-sm md:text-base min-h-11"
         >
           <span className="border-b border-amber-500/30 group-hover:border-amber-400 pb-0.5 font-mono uppercase tracking-wider transition-all duration-300">
-            Let's create something together
+            Let&apos;s create something together
           </span>
           <span className="ml-3 p-1.5 rounded-full border border-zinc-900 group-hover:border-amber-500 group-hover:bg-amber-500/10 transition-all duration-300 flex items-center justify-center">
             <svg 

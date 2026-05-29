@@ -7,8 +7,8 @@ export default function About() {
     <main className="min-h-screen bg-black text-zinc-300 relative overflow-hidden flex items-center py-16 md:py-24">
       
       {/* Structural ambient spotlight mirroring the blue aura backdrop from Creación web moderno visualxdzdfbzd.jpg */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-amber-600/10 blur-[140px] rounded-full pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/2 w-[400px] h-[400px] bg-orange-600/5 blur-[160px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-125 h-125 bg-amber-600/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/2 w-125 h-125 bg-orange-600/5 blur-[160px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-6xl mx-auto w-full px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -23,8 +23,8 @@ export default function About() {
             </h1>
             
             {/* Aspect-ratio matched picture frame displaying the profile element with a custom inner vignette glow effect */}
-            <div className="relative w-full max-w-[360px] lg:max-w-none aspect-[4/5] border border-zinc-800 bg-zinc-900/20 p-2 rounded-2xl backdrop-blur-sm shadow-2xl overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 z-10 pointer-events-none" />
+            <div className="relative w-full max-w-90 lg:max-w-none aspect-4/5 border border-zinc-800 bg-zinc-900/20 p-2 rounded-2xl backdrop-blur-sm shadow-2xl overflow-hidden group">
+              <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60 z-10 pointer-events-none" />
               <div className="relative w-full h-full overflow-hidden rounded-xl bg-zinc-950 border border-zinc-900">
                 <Image 
                   src="/habibi.png" 
