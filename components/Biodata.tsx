@@ -69,7 +69,7 @@ export default function Biodata() {
       {/* SECTION 4: CALL TO ACTION */}
       <div className="pt-4 border-t border-zinc-900/40 max-w-xl">
         <a 
-          href="mailto:okonwhyte@gmail.com"
+          href="mailto:gabrielokonkwo101@gmail.com"
           className="inline-flex items-center group text-zinc-100 font-bold tracking-tight text-sm md:text-base min-h-11"
         >
           <span className="border-b border-amber-500/30 group-hover:border-amber-400 pb-0.5 font-mono uppercase tracking-wider transition-all duration-300">

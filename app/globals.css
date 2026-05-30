@@ -27,13 +27,11 @@ body {
   0%,
   100% {
     box-shadow: 0 0 15px 2px rgba(251, 191, 36, 0.1);
-    /* Swapped to Amber to match brand identity */
     border-color: rgba(251, 191, 36, 0.2);
   }
 
   50% {
     box-shadow: 0 0 25px 5px rgba(249, 115, 22, 0.2);
-    /* Swapped to Orange to match brand identity */
     border-color: rgba(249, 115, 22, 0.4);
   }
 }
