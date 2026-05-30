@@ -2,7 +2,6 @@
 
 :root {
   --background: #000000;
-  /* Fixed foreground color so your baseline body text is cleanly visible */
   --foreground: #e4e4e7;
 }
 
@@ -11,9 +10,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-
-  /* 1. Tell Tailwind v4 to pick up the layout's cursive font variable hook */
-  --font-cursive: var(--font-cursive);
 }
 
 body {

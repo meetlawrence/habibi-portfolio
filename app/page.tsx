@@ -5,10 +5,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// interface FeaturedCarouselProps {
-//   count?: number;
-// }
-
 interface VideoData {
   title: string;
   id: string;
@@ -35,7 +31,6 @@ const featuredVideos: VideoData[] = [
   }
 ];
 
-// 1. EXTRACTED OUTSIDE OF RENDER: Fixed "Cannot create components during render" error
 function VideoPlaceholderCarousel({ videos, onSelectVideo }: CarouselProps) {
   return (
     <div className="mt-6 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent md:grid md:grid-cols-3 md:overflow-x-visible md:pb-0">
@@ -107,7 +102,6 @@ export default function Home() {
         {/* Subtle top theater lighting projection */}
         <div className="absolute top-[-20%] right-[-10%] w-175 h-175 bg-amber-950/15 blur-[150px] rounded-full pointer-events-none z-0" />
         
-        {/* Added -mt-12 on mobile to shift the complete grid container layout up the screen */}
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-center relative z-10 -mt-12 lg:mt-0">
           
           {/* Left / Upper Main Presentation Block */}

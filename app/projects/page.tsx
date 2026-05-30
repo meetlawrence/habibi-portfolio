@@ -13,7 +13,7 @@ interface CarouselProps {
   onSelectVideo: (video: VideoData) => void;
 }
 
-// Reusable localized placeholder carousel matching your preferred minimalist framework
+// Reusable localized placeholder carousel
 function VideoPlaceholderCarousel({ videos, onSelectVideo }: CarouselProps) {
   return (
     <div className="mt-6 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent md:grid md:grid-cols-3 md:overflow-x-visible md:pb-0">
@@ -132,7 +132,7 @@ export default function ProjectsOverview() {
         <VideoPlaceholderCarousel videos={youtubeReels} onSelectVideo={setActiveVideo} />
       </section>
 
-      {/* ================= THEATER VIDEO MODAL (HOMEPAGE DESIGN) ================= */}
+      {/* ================= THEATER VIDEO MODAL ================= */}
       {activeVideo && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4 transition-opacity duration-300"

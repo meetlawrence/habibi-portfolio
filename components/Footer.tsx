@@ -53,7 +53,7 @@ export default function Footer() {
         {/* Brand Grouping Wrapper Container */}
         <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
           <Link href="/" className="group flex flex-col items-center gap-1 leading-none">
-            {/* Logo Layout Box Sync */}
+            {/* Logo Layout Box */}
             <div className="relative w-10 h-10 overflow-hidden rounded-md transition-transform duration-300 group-hover:scale-105">
               <Image 
                 src="/habibi-logo.webp" 
